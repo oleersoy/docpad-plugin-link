@@ -1,0 +1,47 @@
+{
+  "name": "docpad-plugin-link",
+  "version": "2.0.0",
+  "description": "Adds getUrl function for retreiving absolute path",
+  "homepage": "https://github.com/hypercubed/docpad-plugin-geturl",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "plugin",
+    "link",
+    "anchor"
+  ],
+  "author": "Ole Ersoy (https://github.com/oleersoy)",
+  "maintainers": [
+    "Ole K. Ersoy (https://github.com/oleersoy)"
+  ],
+  "contributors": [
+    "Ole Ersoy (https://github.com/oleersoy)", 
+    "J. Harshbarger (https://github.com/hypercubed)",
+    "Eduán Lávaque (https://github.com/Greduan)",
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "bugs": {
+    "url": "https://github.com/oleersoy/docpad-plugin-link/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oleersoy/docpad-plugin-link.git"
+  },
+  "engines": {
+    "node": ">=0.8",
+    "docpad": ">=6"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.6.2",
+    "docpad": "6",
+    "docpad-plugin-eco": "~2.0.2",
+    "joe": "~1.2.0",
+    "joe-reporter-console": "~1.2.1",
+    "chai": "~1.6.1"
+  },
+  "main": "./out/link.plugin.js",
+  "scripts": {
+    "test": "node ./out/link.test.js"
+  }
+}
