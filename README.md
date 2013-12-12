@@ -40,11 +40,11 @@ Override the following defaults when necessary:
 
 ```
 # ...
-  templateData:
+{
+	templateData:
 		site:
-			scheme: 'http'
-            host: localhost
-            port: 9778
+			url: 'http://localhost:9778/base'
+}
 # ...
 ```
 
