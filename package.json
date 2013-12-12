@@ -1,8 +1,8 @@
 {
   "name": "docpad-plugin-link",
-  "version": "2.0.0",
-  "description": "Adds getUrl function for retreiving absolute path",
-  "homepage": "https://github.com/hypercubed/docpad-plugin-geturl",
+  "version": "2.0.1",
+  "description": "Take the document's`id` and generate the corresponding html link",
+  "homepage": "https://github.com/oleersoy/docpad-plugin-link",
   "keywords": [
     "docpad",
     "docpad-plugin",
