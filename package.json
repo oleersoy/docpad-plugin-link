@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-link",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "description": "Take the document's`id` and generate the corresponding html link",
   "homepage": "https://github.com/oleersoy/docpad-plugin-link",
   "keywords": [
