@@ -14,14 +14,19 @@ module.exports = (BasePlugin) ->
 				target = docpad.getFileById(id, {collection:null})
 				title = target.get?('title')
 				text = title
+				fragment = ''
 				
 				if opts?
 					if opts.title?
 						title = opts.title
 					if opts.text?
 						text = opts.text
+					if opts.fragment?
+						fragment = '#' + opts.fragment
+						
 
-				href = config.url + target.get?('url')
+				href = config.url + target.get?('url') + fragment
+
 				link = "<a href='#{href}' title='#{title}'>#{text}</a>"
 				return link
 	
