@@ -65,5 +65,5 @@ Run the tests to see the below executed.
 | `sub/sub_document.md.eco`		| 2					| Sub Meta Data Title for 2				| `@link(2, {title: "Custom Title 2", text: " Custom Text 2"})`	| `<%- @link(2, {title: "Custom Title 2", text: "Custom Text 2"})%>`	|
 
 ## License
-See [License.md file][License.md]
+See [License.md](License.md)
 <br/>Copyright © 2013+ Ole Ersoy
