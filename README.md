@@ -5,13 +5,14 @@
 
 ## Summary
 
-Take the document's`id` and generate the corresponding html link.
+Take the document's `id` and generate the corresponding HTML link.
 
 ## Purpose
 
-Prevents the breaking of links when a document is moved to a different directory
-or gets renamed while also keeping the link DRY since the link title and text is also
-pulled from the document's meta data.
+Prevents the breaking of links when a document is moved to a different directory, 
+or gets renamed. 
+Also keeps links <abbr title="Don't Repeat Yourself">DRY</abbr>, 
+since the link title and text is pulled from the document's meta data.
 
 ## Install
 
@@ -38,7 +39,7 @@ make test
 
 Override the following defaults when necessary:
 
-```
+```coffeescript
 # ...
 {
 	templateData:
@@ -52,17 +53,17 @@ Override the following defaults when necessary:
 
 Run the tests to see the below executed.
 
-|Documents Location				|Document ID				|Document title							| Call															| Returned	|
-| ---							| ---						| ---									| ---															| ---
-| root_document.md.eco			| 1							| Root Meta Data Title for 1			| @link(1)														| `<%- @link(1)%>`|
-| root_document.md.eco			| 1							| Root Meta Data Title for 1			| @link(1, {title: "Custom Title 1"})							| `<%- @link(1, {title: "Custom Title 1"})%>`|
-| root_document.md.eco			| 1							| Root Meta Data Title for 1			| @link(1, {text: "Custom Text 1"})								| `<%- @link(1, {text: "Custom Text 1"})%>`|
-| root_document.md.eco			| 1							| Root Meta Data Title for 1			| @link(1, {title: "Custom Title 1", text: " Custom Text 1"})	| `<%- @link(1, {title: "Custom Title 1", text: "Custom Text 1"})%>`|
-| sub/sub_document.md.eco		| 2							| Sub Meta Data Title for 2				| @link(2)														| `<%- @link(2)%>`|
-| sub/sub_document.md.eco		| 2							| Sub Meta Data Title for 2				| @link(2, {title: "Custom Title 2"})							| `<%- @link(2, {title: "Custom Title 2"})%>`|
-| sub/sub_document.md.eco		| 2							| Sub Meta Data Title for 2				| @link(2, {text: "Custom Text 2"})								| `<%- @link(2, {text: "Custom Text 2"})%>`|
-| sub/sub_document.md.eco		| 2							| Sub Meta Data Title for 2				| @link(2, {title: "Custom Title 2", text: " Custom Text 2"})	| `<%- @link(2, {title: "Custom Title 2", text: "Custom Text 2"})%>`|
+|Document Location				|Document ID		|Document title							| Call															| Returned	|
+| ---							| ---				| ---									| ---															| ---
+| `root_document.md.eco`		| 1					| Root Meta Data Title for 1			| `@link(1)`													| `<%- @link(1)%>`	|
+| `root_document.md.eco`		| 1					| Root Meta Data Title for 1			| `@link(1, {title: "Custom Title 1"})`							| `<%- @link(1, {title: "Custom Title 1"})%>`	|
+| `root_document.md.eco`		| 1					| Root Meta Data Title for 1			| `@link(1, {text: "Custom Text 1"})`							| `<%- @link(1, {text: "Custom Text 1"})%>`	|
+| `root_document.md.eco`		| 1					| Root Meta Data Title for 1			| `@link(1, {title: "Custom Title 1", text: " Custom Text 1"})`	| `<%- @link(1, {title: "Custom Title 1", text: "Custom Text 1"})%>`|
+| `sub/sub_document.md.eco`		| 2					| Sub Meta Data Title for 2				| `@link(2)`													| `<%- @link(2)%>`	|
+| `sub/sub_document.md.eco`		| 2					| Sub Meta Data Title for 2				| `@link(2, {title: "Custom Title 2"})`							| `<%- @link(2, {title: "Custom Title 2"})%>`	|
+| `sub/sub_document.md.eco`		| 2					| Sub Meta Data Title for 2				| `@link(2, {text: "Custom Text 2"})`							| `<%- @link(2, {text: "Custom Text 2"})%>`	|
+| `sub/sub_document.md.eco`		| 2					| Sub Meta Data Title for 2				| `@link(2, {title: "Custom Title 2", text: " Custom Text 2"})`	| `<%- @link(2, {title: "Custom Title 2", text: "Custom Text 2"})%>`	|
 
 ## License
-See License.md file
-<br/>Copyright &copy; 2013+ Ole Ersoy
+See [License.md](License.md)
+<br/>Copyright © 2013+ Ole Ersoy
